@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: ae0f05c7c948543468e26bfc30518a60
+guid: f7b05c51b11f2d14e8552e3d82ba28bc
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Pistol Idle2
+    second: Pistol Walk Backward
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Pistol Idle2
+      name: Pistol Walk Backward
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 249
+      lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -51,7 +51,7 @@ ModelImporter:
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0

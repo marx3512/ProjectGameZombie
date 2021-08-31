@@ -822,6 +822,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   cine: {fileID: 0}
+  anim: {fileID: 95295269414876616}
 --- !u!1 &1358112078750646
 GameObject:
   m_ObjectHideFlags: 0
