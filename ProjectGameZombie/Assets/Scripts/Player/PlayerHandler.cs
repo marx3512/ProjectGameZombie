@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Cinemachine;
 
 public class PlayerHandler : MonoBehaviour
@@ -51,10 +48,16 @@ public class PlayerHandler : MonoBehaviour
 		}
 		if (Input.GetMouseButton(1)){
             cine.m_Lens.FieldOfView = 20;
+            cine.m_YAxis.m_MaxSpeed = 1f;
+            cine.m_XAxis.m_MaxSpeed = 100.0f;
 			//Animations
             anim.SetFloat("X", x);
             anim.SetFloat("Y", z);
 		} 
-		else if(Input.GetMouseButtonUp(1)) cine.m_Lens.FieldOfView = 40;
+		else if(Input.GetMouseButtonUp(1)){
+			cine.m_Lens.FieldOfView = 40;
+            cine.m_YAxis.m_MaxSpeed = 2.0f;
+            cine.m_XAxis.m_MaxSpeed = 200.0f;
+        } 
 	}
 }
