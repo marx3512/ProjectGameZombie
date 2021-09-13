@@ -967,6 +967,9 @@ MonoBehaviour:
     m_Bits: 8
   cine: {fileID: 0}
   anim: {fileID: 95295269414876616}
+  playerStatus: {fileID: 11400000, guid: 7fda8c5f91e845f45b24c6a20bd400b9, type: 2}
+  AmmoInGun: 10
+  AmmoInBag: 30
 --- !u!114 &57239921
 MonoBehaviour:
   m_ObjectHideFlags: 0
