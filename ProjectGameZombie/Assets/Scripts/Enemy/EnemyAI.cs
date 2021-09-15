@@ -12,21 +12,33 @@ public class EnemyAI : MonoBehaviour
     private bool walkPointSet;
     [SerializeField] private float walkPointRange;
 
-    //States
-    [SerializeField] private float sightRange;
-    private bool playerInSightRange;
+    //Wait
+    float cont = 0;
+
+    //Field of View
+    public FieldView fieldView;
+
+    private void Start() {
+        fieldView = GetComponent<FieldView>();
+    }
 
     private void Update() {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        if(!playerInSightRange) Patrolling();
+        if(!fieldView.canSeeplayer) Patrolling();
         else ChasePlayer();
+        
     }
 
     void Patrolling(){
         if( !walkPointSet) SearchWalkPoint();
         else if(walkPointSet) navMeshAgent.SetDestination(walkPoint);
 
-        if(Vector3.Distance(transform.position, walkPoint) < 5f) walkPointSet = false;
+        if(Vector3.Distance(transform.position, walkPoint) < 2f){
+            cont += Time.deltaTime;
+            if(cont >= 6){
+                walkPointSet = false;
+                cont = 0;
+            }
+        } 
     }
 
     void SearchWalkPoint(){
@@ -38,6 +50,8 @@ public class EnemyAI : MonoBehaviour
 
         if(Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround)) walkPointSet = true;
     }
+
+    
 
     void ChasePlayer(){
         navMeshAgent.SetDestination(targetPlayer.position);
