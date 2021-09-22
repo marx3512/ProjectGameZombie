@@ -6,6 +6,7 @@ namespace Inventory.Code {
     {
         public GameObject inventoryObj;
 
+
         private void Start()
         {
             inventoryObj.SetActive(false);
