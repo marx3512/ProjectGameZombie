@@ -6,10 +6,4 @@ public class GameManager : MonoBehaviour
 	{
 		Cursor.lockState = CursorLockMode.Locked;
 	}
-
-	public void ActivateObject(GameObject obj)
-	{
-		if(obj.activeSelf) obj.SetActive(false);
-		else obj.SetActive(true);
-	}
 }

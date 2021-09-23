@@ -219,6 +219,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &40527658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 526383595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &40527660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 526383595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40527658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45177815b3db7494f878a2695481b403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &108787822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 764803059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &108787824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 764803059}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108787822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45177815b3db7494f878a2695481b403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &116976975 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
@@ -229,6 +261,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
   m_PrefabInstance: {fileID: 6105888090274151595}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &116976978 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 6105888090274151595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116976975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45177815b3db7494f878a2695481b403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &126644900
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +663,22 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
   m_PrefabInstance: {fileID: 849230971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &341705547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 1912349560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &341705549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 1912349560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341705547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45177815b3db7494f878a2695481b403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &360317868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4207161344963526, guid: da9cdc9076b584147bdf535245f9454e, type: 3}
@@ -786,14 +845,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots:
   - {fileID: 116976975}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1537670258}
+  - {fileID: 1057203803}
+  - {fileID: 2100575933}
+  - {fileID: 108787822}
+  - {fileID: 341705547}
+  - {fileID: 40527658}
+  - {fileID: 1502534496}
   item: {fileID: 6383960418647769650, guid: bd53a7c878fd8114396d0cbfbe3d1df0, type: 3}
+  itemInventory: {fileID: 0}
+  slotId: 0
 --- !u!1 &412984276
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,13 +933,13 @@ PrefabInstance:
       value: Slot (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
-      propertyPath: id
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1086,6 +1147,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481299947}
     m_Modifications:
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 40527660}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGroupButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SlotHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Name
       value: Slot (6)
@@ -1095,9 +1168,13 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1199,7 +1276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &594099985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2003,6 +2080,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481299947}
     m_Modifications:
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 108787824}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGroupButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SlotHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Name
       value: Slot (4)
@@ -2012,9 +2101,13 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2303,6 +2396,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481299947}
     m_Modifications:
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1502534498}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGroupButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SlotHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Name
       value: Slot (7)
@@ -2312,9 +2417,13 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2472,8 +2581,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877919541}
-  m_LocalRotation: {x: 0.049813703, y: -2.872036e-15, z: 1.4035918e-16, w: 0.99875855}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.09657636, y: 4.4207493e-17, z: -2.0520639e-18, w: 0.99532557}
+  m_LocalPosition: {x: 0, y: 0.45208097, z: 0.14006996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1872235093}
@@ -2557,7 +2666,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.03163855, y: -0.000000019663547, z: 6.2238703e-10, w: 0.9994994}
+  m_LocalRotation: {x: 0.031638544, y: 0.0000000015865703, z: -4.4136257e-11, w: 0.9994994}
   m_LocalPosition: {x: 0.37, y: 1.987, z: -5.123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2841,6 +2950,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038068186}
   m_CullTransparentMesh: 1
+--- !u!1 &1057203803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 2067048306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1057203805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 2067048306}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057203803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45177815b3db7494f878a2695481b403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1230171225 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
@@ -3138,6 +3263,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481299947}
     m_Modifications:
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1537670260}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGroupButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SlotHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Name
       value: Slot (1)
@@ -3147,9 +3284,13 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3302,7 +3443,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427656675}
-  m_LocalRotation: {x: 0.03163855, y: -0.000000019662885, z: 6.224168e-10, w: 0.9994994}
+  m_LocalRotation: {x: 0.031638544, y: 0.000000001490459, z: -4.717959e-11, w: 0.9994994}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3459,6 +3600,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487052323}
   m_CullTransparentMesh: 1
+--- !u!1 &1502534496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 849230971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1502534498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 849230971}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502534496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45177815b3db7494f878a2695481b403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1533407151
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,6 +3726,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1537670258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 1405429553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1537670260 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 1405429553}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537670258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45177815b3db7494f878a2695481b403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1577045989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8853006689093884718, guid: da9cdc9076b584147bdf535245f9454e, type: 3}
@@ -3640,7 +3813,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578373574}
-  m_LocalRotation: {x: 0.013500971, y: 0.000000019651942, z: -2.653445e-10, w: 0.99990886}
+  m_LocalRotation: {x: 0.013500969, y: -0.000000003351625, z: 4.52543e-11, w: 0.99990886}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4261,6 +4434,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481299947}
     m_Modifications:
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 341705549}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGroupButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SlotHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Name
       value: Slot (5)
@@ -4270,9 +4455,13 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4376,6 +4565,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481299947}
     m_Modifications:
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1057203805}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGroupButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SlotHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Name
       value: Slot (2)
@@ -4385,9 +4586,13 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4479,6 +4684,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4990100130141130, guid: da9cdc9076b584147bdf535245f9454e, type: 3}
   m_PrefabInstance: {fileID: 463897709}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2100575933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+  m_PrefabInstance: {fileID: 451056755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3467593213491029484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4543,14 +4753,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1481299947}
     m_Modifications:
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 116976978}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGroupButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SlotHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Invent.Mana.InventoryManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 393867155551056147, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900004, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Name
       value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: id
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
+      propertyPath: invManager
+      value: 
+      objectReference: {fileID: 384782451}
+    - target: {fileID: 6105888090321900024, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: groupButtons
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 594099984}
     - target: {fileID: 6105888090321900027, guid: b5bbb05aff1deb84ba9908c6eb22e523, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

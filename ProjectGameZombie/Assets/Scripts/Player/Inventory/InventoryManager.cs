@@ -6,7 +6,9 @@ namespace Invent.Mana
     public class InventoryManager : MonoBehaviour
     {
         [SerializeField] private GameObject[] slots;
-        [SerializeField] private GameObject item;
+        [SerializeField] private GameObject item, itemInventory;
+
+        public int slotId;
 
         public void SendItem(Sprite img)
         {   
@@ -30,6 +32,7 @@ namespace Invent.Mana
         }
 
         public void Usebutton(){
+            itemInventory = slots[slotId].GetComponentInChildren<GameObject>();
             Debug.Log("I'm using item");
         }
 
