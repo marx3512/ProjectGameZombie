@@ -24,7 +24,8 @@ namespace Item.interaction {
         {
             if (textObj.activeSelf && Input.GetKeyDown(KeyCode.E))
             {
-                inventoryManager.SendItem(m_Hit.transform.GetComponent<ItensHandle>().itenIcon);
+                inventoryManager.SendItem(m_Hit.transform.GetComponent<ItensHandle>().itenIcon,
+                m_Hit.transform.GetComponent<ItensHandle>().typeItem);
                 Destroy(m_Hit.transform.gameObject);
             }
         }

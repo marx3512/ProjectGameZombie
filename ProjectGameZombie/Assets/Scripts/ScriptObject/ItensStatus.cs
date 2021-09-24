@@ -4,4 +4,5 @@ using UnityEngine;
 public class ItensStatus : ScriptableObject
 {
     public Sprite spriteIten;
+    public string typeItem;
 }

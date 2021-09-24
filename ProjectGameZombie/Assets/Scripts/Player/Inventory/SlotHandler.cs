@@ -7,8 +7,9 @@ public class SlotHandler : MonoBehaviour
 
     [SerializeField] private GameObject groupButtons;
 
-    public bool Busy = false;
-    public int id = 0;
+    public string typeItem;
+    [HideInInspector] public bool Busy = false;
+    [HideInInspector] public int id = 0;
 
     public void ShowGroupButtons()
     {

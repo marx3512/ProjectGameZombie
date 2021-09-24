@@ -3,7 +3,8 @@ using Cinemachine;
 using Weapon;
 using Inventory.Code;
 
-namespace Player{
+namespace Player
+{
     public class PlayerHandler : MonoBehaviour
     {
         //Variable move player
@@ -28,13 +29,14 @@ namespace Player{
         //Variable status player
         [Header("Status players")]
         [SerializeField] private PlayerStatus playerStatus;
-        private float health;
+        public float health;
 
 		//Munition
 		[HideInInspector] public int AmmoBag;
 
         //Inventory
         InventoryHandle inventoryHandle;
+
 		void Start()
         {
             health = playerStatus.Health;

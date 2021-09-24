@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Player;
 
 namespace Invent.Mana
 {
@@ -8,15 +9,28 @@ namespace Invent.Mana
         [SerializeField] private GameObject[] slots;
         [SerializeField] private GameObject item, itemInventory;
 
-        public int slotId;
+        [HideInInspector] public int slotId;
+        [SerializeField] private Text descriptionInvent;
 
-        public void SendItem(Sprite img)
+        [Header("PlayerStatus")]
+        [SerializeField] private PlayerHandler playerHandler;
+        [SerializeField] private Image lifeBar;
+
+        private void Update() {
+            if(playerHandler.health == 100) lifeBar.color = Color.green;
+            else if(playerHandler.health >= 50 && playerHandler.health < 100) lifeBar.color = Color.yellow;
+            else lifeBar.color = Color.red;
+        }
+
+
+        public void SendItem(Sprite img,string type)
         {   
             GameObject slotTarget = CheckSlots();
             if(slotTarget != null) {
                 item.GetComponent<Image>().sprite = img;
                 Instantiate(item,slotTarget.transform);
                 slotTarget.GetComponent<SlotHandler>().Busy = true;
+                slotTarget.GetComponent<SlotHandler>().typeItem = type;
             }
             else Debug.Log("Inventory full");
         }
@@ -32,13 +46,30 @@ namespace Invent.Mana
         }
 
         public void Usebutton(){
-            itemInventory = slots[slotId].GetComponentInChildren<GameObject>();
-            Debug.Log("I'm using item");
+            ManipItem();
         }
 
         public void Discardbutton()
         {
-            Debug.Log("I'm discard item");
+            itemInventory = slots[slotId].transform.GetChild(0).gameObject;
+            SlotHandler slotScript = slots[slotId].GetComponent<SlotHandler>();
+            slotScript.Busy = false;
+            slotScript.ShowGroupButtons();
+            Destroy(itemInventory);
+        }
+
+        void ManipItem(){
+            itemInventory = slots[slotId].transform.GetChild(0).gameObject;
+            SlotHandler slotScript = slots[slotId].GetComponent<SlotHandler>();
+            if(slotScript.typeItem == "Heal") {
+                playerHandler.health += 20;
+                if(playerHandler.health > 100) playerHandler.health = 100;
+                slotScript.ShowGroupButtons();
+                slotScript.Busy = false;
+                Destroy(itemInventory);
+            }
+            else descriptionInvent.text = "Item is not use";
+            
         }
     }
 }
