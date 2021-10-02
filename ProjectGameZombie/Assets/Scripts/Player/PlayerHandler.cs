@@ -57,8 +57,7 @@ namespace Player
                 {
                     float targetAngle = Mathf.Atan2(move.x, move.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
                     float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-                    transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
+                    if(cine.m_Lens.FieldOfView != 20) transform.rotation = Quaternion.Euler(0f, angle, 0f);
                     Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                     anim.SetBool("MoveNotSight", true);
                     characterController.Move(moveDir * speed * Time.deltaTime);
@@ -82,6 +81,13 @@ namespace Player
                     cine.m_Lens.FieldOfView = 20;
                     cine.m_YAxis.m_MaxSpeed = 1f;
                     cine.m_XAxis.m_MaxSpeed = 100.0f;
+
+                    /*float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, cam.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
+                    transform.rotation = Quaternion.Euler(0f, angle, 0f);*/
+                    float yawCamera = cam.rotation.eulerAngles.y;
+                    transform.rotation = Quaternion.Slerp(transform.rotation, 
+                    Quaternion.Euler(0, yawCamera, 0), turnSmoothVelocity * Time.deltaTime);
+
                     //Animations
                     anim.SetFloat("X", x);
                     anim.SetFloat("Y", z);

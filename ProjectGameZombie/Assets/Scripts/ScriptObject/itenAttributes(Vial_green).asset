@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: itenAttributes(Vial_green)
   m_EditorClassIdentifier: 
   spriteIten: {fileID: 21300018, guid: 4f666dd4618814d2f8c5a2599cd224c7, type: 3}
+  typeItem: Heal
