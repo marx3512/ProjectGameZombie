@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
 using Cinemachine;
 using Weapon;
 using Inventory.Code;
@@ -25,6 +26,8 @@ namespace Player
         //Variable animations player
         [Header("Animations")]
         [SerializeField] private Animator anim;
+        [SerializeField] private Rig weaponAim, bodyAim;
+        private float aimDuration = 0.2f;
 
         //Variable status player
         [Header("Status players")]
@@ -74,7 +77,7 @@ namespace Player
                         var target = hit.transform.gameObject.GetComponent<EnemyHandler>();
                         if (target != null) target.health -= 1;
                     }
-                    weaponsHandle.Shooting();
+                    //weaponsHandle.Shooting();
                 }
                 if (Input.GetMouseButton(1))
                 {
@@ -91,12 +94,19 @@ namespace Player
                     //Animations
                     anim.SetFloat("X", x);
                     anim.SetFloat("Y", z);
+                    anim.SetBool("IAmSight", true);
+                    weaponAim.weight += Time.deltaTime / aimDuration;
+                    bodyAim.weight += Time.deltaTime / aimDuration;
                 }
-                else if (Input.GetMouseButtonUp(1))
+                else
                 {
+                    anim.SetBool("IAmSight", false);
                     cine.m_Lens.FieldOfView = 40;
                     cine.m_YAxis.m_MaxSpeed = 2.0f;
                     cine.m_XAxis.m_MaxSpeed = 200.0f;
+                    weaponAim.weight -= Time.deltaTime / aimDuration;
+                    bodyAim.weight -= Time.deltaTime / aimDuration;
+
                 }
                 if (Input.GetKeyDown(KeyCode.R)) weaponsHandle.Reloading();
                 #endregion
